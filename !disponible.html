@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>  <!-- Make sure script.js is linked -->
+</head>
+<body>
+    <!-- Description with Styling -->
+    <p class="description" id="description">Informació encara no disponible</p>
+
+    <script>
+        // Load the stored language when the page loads
+        document.addEventListener("DOMContentLoaded", function() {
+            let storedLanguage = localStorage.getItem("language") || "spanish";
+            changeDescriptionText(storedLanguage);  // Update description text based on language
+        });
+    </script>
+</body>
+</html>

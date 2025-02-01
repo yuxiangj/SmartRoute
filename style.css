@@ -1,0 +1,134 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    position: relative; /* Allow positioning of elements */
+}
+
+.container {
+    text-align: center;
+}
+/* Language buttons with circular shape */
+.language-buttons {
+    position: absolute; /* Position buttons absolutely */
+    top: 20px;  /* Set the distance from the top */
+    right: 80px; /* Move the buttons more to the left (increase the value to shift them further left) */
+    display: flex; /* Arrange the buttons horizontally */
+    flex-direction: row; /* Ensure the flags are in a row (default behavior, but specified for clarity) */
+}
+
+.flag-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 0 2px; /* Reduced margin to bring the buttons closer */
+    border-radius: 50%; /* Makes the button circular */
+    padding: 5px; /* Adjust padding to fit the flags nicely inside the circle */
+    width: 50px; /* Set a fixed width */
+    height: 50px; /* Set a fixed height */
+}
+
+.flag-btn img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; /* Ensure the flag image is also circular */
+    transition: transform 0.3s ease;
+}
+
+.flag-btn:hover img {
+    transform: scale(1.1);
+}
+
+/* Next button container with vertical stacking */
+.next-page {
+    position: absolute; /* Makes this container float at a specific position */
+    top: 170px; /* You can change this value to position the next buttons */
+    left: 1180px;  /* Centers the buttons horizontally */
+    transform: translateX(-50%); /* Ensures perfect centering */
+    display: flex;
+    flex-direction: column;  /* Stack the buttons vertically */
+    align-items: center; /* Center the buttons horizontally within the container */
+}
+
+.next-btn {
+    width: 320px;
+    height: 24px; /* Adjust height for better stacking */
+    padding: 12px 40px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    border: 2px solid black;
+    border-radius: 50px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+    margin-bottom: 40px; /* Adds space between buttons */
+    
+    /* Elegant Shadow and smooth edges */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.next-btn:hover {
+    background: linear-gradient(145deg, #6a5acd, #8a2be2);
+    border-color: #4b0082;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15), 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure that the body and container are arranged vertically */
+body {
+    display: flex;
+    flex-direction: column; /* This will make the content stack vertically */
+    align-items: center;    /* Center the content horizontally */
+    justify-content: center; /* Center the content vertically */
+    height: 100vh;          /* Full viewport height */
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+/* Title styles */
+.title {
+    font-size: 3rem; /* Large title font size */
+    font-weight: bold;
+    text-align: center;
+    color: #333; /* Dark gray text color */
+    margin-bottom: 10px; /* Space below the title */
+}
+
+/* Slogan styles */
+.slogan {
+    font-size: 1.8rem;
+    text-align: center;
+    color: #555; /* Lighter gray for the slogan */
+    margin-bottom: 20px; /* Space below the slogan */
+}
+
+/* Image styles */
+.main-image {
+    display: block;
+    margin: 20px 0; /* Top and bottom margins to separate the image from text */
+    max-width: 30%; /* Limit the image width */
+    height: auto;
+    border-radius: 10px; /* Round the corners of the image */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+}
+
+/* Description styles */
+.description {
+    font-size: 1.2rem;
+    line-height: 1.6; /* Increase line height for better readability */
+    color: #333;
+    width: 80%; /* Limit the width of the text */
+    text-align: center; /* Center-align the text */
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background color */
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Add a shadow to make it stand out */
+}

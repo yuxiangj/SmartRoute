@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartRoute</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Display the image -->
+        <img id="image" src="fondo.png" alt="Language Image" />
+
+        <!-- Language Selector (Flag buttons) -->
+        <div class="language-buttons">
+            <button onclick="changeLanguage('english')" class="flag-btn">
+                <img src="flag_english.png" alt="English Flag">
+            </button>
+            <button onclick="changeLanguage('spanish')" class="flag-btn">
+                <img src="flag_spanish.png" alt="Spanish Flag">
+            </button>
+            <button onclick="changeLanguage('catalan')" class="flag-btn">
+                <img src="flag_catalan.png" alt="Catalan Flag">
+            </button>
+            <!-- Add more buttons for other languages as needed -->
+        </div>
+
+        <!-- Next Button -->
+        <div class="next-page">
+            <a href="intro.html?page=who" class="next-btn" id="0">Who are we?</a>
+            <a href="!disponible.html?page=product" class="next-btn" id="1">Product</a>
+            <a href="!disponible.html?page=news" class="next-btn" id="2">News</a>
+            <a href="!disponible.html?page=support" class="next-btn" id="3">Support</a>
+            <a href="!disponible.html?page=faq" class="next-btn" id="4">FAQ</a>
+
+        </div>
+
+    
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

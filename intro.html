@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">  
+    <title>SmartRoute</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Title and Slogan -->
+    <h1 class="title" id="title">SmartRoute Technologies</h1>
+    <h2 class="slogan" id="slogan">El camí que la teva empresa necessita</h2>
+
+    <!-- Image After the Title -->
+    <img src="logo.jpeg" alt="Image Description" class="main-image">
+
+    <!-- Description with Styling -->
+    <p class="description" id="description">Som estudiants de la UPF. L'empresa va néixer amb la idea de millorar l'eficiència de les empreses de transport i logística.</p>
+
+    <script>
+        // Load the stored language when the page loads
+        document.addEventListener("DOMContentLoaded", function() {
+            let storedLanguage = localStorage.getItem("language") || "spanish";
+            changeIntroText(storedLanguage);
+        });
+    </script>
+
+</body>
+</html>
